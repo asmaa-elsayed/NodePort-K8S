@@ -7,14 +7,14 @@
 I worked on Minikube hosted on virtualbox on vm (ubuntu) vmware workstation
 
 ## Commands to run
-kubectl apply -f deployment.yml
+   $ kubectl apply -f deployment.yml
 
 ### To make the deployment being exposed from outside
-kubectl expose deployment myapp-deployment --type=NodePort --port=80
+   $ kubectl expose deployment myapp-deployment --type=NodePort --port=80
 
 ### To get the url of the app
-minikube service myapp-deployment --url
+   $ minikube service myapp-deployment --url
 
 ### To acess the application 
-curl [url]
+   $ curl [url]
 
